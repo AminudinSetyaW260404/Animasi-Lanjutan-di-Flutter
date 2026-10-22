@@ -1,22 +1,27 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
+import 'app_theme.dart';
 import 'home_screen.dart';
 
 void main() {
-  runApp(MainApp());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  /// Opsional: RNG ber-seed agar urutan soal deterministik pada test.
+  final math.Random? random;
+
+  const MainApp({super.key, this.random});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-      ),
-      home: HomeScreen(),
+      title: 'Kuis Animasi Flutter',
+      theme: AppTheme.light,
+      home: HomeScreen(random: random),
     );
   }
 }

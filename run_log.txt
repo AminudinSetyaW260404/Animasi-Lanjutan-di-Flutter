@@ -1,0 +1,11 @@
+This app is using a deprecated version of the Android embedding.
+To avoid unexpected runtime failures, or future build failures, try to migrate this app to the V2 embedding.
+Take a look at the docs for migrating an app: https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects
+Launching lib\main.dart on Web Server in debug mode...
+Waiting for connection from debug service on Web Server...         37.4s
+lib\main.dart is being served at http://localhost:8181
+The web-server device requires the Dart Debug Chrome extension for debugging. Consider using the Chrome or Edge devices for an improved development workflow.
+
+  To hot restart changes while running, press "r" or "R".
+For a more detailed help message, press "h". To quit, press "q".
+
